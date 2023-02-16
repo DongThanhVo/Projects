@@ -1,0 +1,116 @@
+/* Thanh Vo */
+
+* { box-sizing: border-box; }
+
+#wrapper { width: 960px;
+		   margin: auto;
+		   padding: auto; }
+
+header { background-color: #CDA71A;
+		 color: #ff0000;
+		 height: 50px; }
+		 
+body { background-color: #cbdcad;
+	   color: #091302;
+	   font-family: Verdana, Arial, sans-serif;}
+
+nav { font-weight: bold;
+	  padding: 1em;
+	  float: left;
+	  width: 200px; }
+	  
+.floatleft { float:left;
+			 margin-right: 1em;
+			 margin-bottom: 1em; }
+
+nav a { text-decoration: none;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		border: 3px  #cccccc outset;
+		padding: 1em;
+		margin-bottom: 1em; }
+		
+nav a:link { color: #6E5623; }
+
+nav a:visited { color: #4C1F11; }
+
+nav a:hover { color: #A7491C;
+			  border: 3px inset #333333; }
+			  
+nav ul { list-style-type: none;
+		 padding-left: 0px; }
+		 
+main { padding-left: 2em;
+	   padding-right: 2em;
+	   display: block;
+	   margin-left: 170px;
+	   padding-top: 1em; }
+	   
+footer { font-size: 0.60em;
+		 font-style: italic;
+		 text-align: center;
+		 padding: 1em; }
+		 
+table { margin: auto;
+		width: 90%;
+		border: 1px solid #2b1d0a;
+		border-collapse: collapse; }
+		
+td, th { padding: 5px;
+		 border: 1px solid #2b1d0a; }
+		 
+tr:nth-of-type(even) { background-color: #efe375; }
+
+caption { margin: 1em;
+		  font-size: 120%;
+		  font-weight: bold;
+		  color: #4c1f11; }
+		  
+tbody td { margin-left: 1em; }
+
+label { padding-right: 1em; }
+		
+legend { font-weight: bold; }
+
+fieldset { padding: 1em; }
+		 
+@media only screen and (max-width: 1024px) {
+body { margin: 0px;
+	   padding: 0px; }
+	   
+main { margin: 0px; }
+
+#wrapper { width: 100%; }
+
+nav { float: none;
+	  width: auto; }
+	  
+nav a { padding: 0.2em;
+		margin-left: 0.3em;
+		border-style: none; }
+		
+nav li { display: inline-block; }
+
+nav ul { text-align: center; }
+	  
+h1, h2 { font-size: 120%; }
+
+p { font-size: 90%; }
+}
+
+@media only all and (max-width: 768px) {
+.floatleft { display: none; }
+
+nav, nav ul, nav li { padding: 0;}
+			 
+nav a { display: block;
+	    border-bottom: 3px  #cccccc outset;
+		padding: 0.5em; }
+		
+nav li { display: block; }
+	  
+h1, h2 { font-size: 100%; }
+p { font-size: 90%; }
+}
+
